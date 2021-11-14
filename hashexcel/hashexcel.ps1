@@ -1,7 +1,7 @@
 ##variables
 $date = Get-Date -f "MM/dd/yyyy HH:mm"
 $sheet = (Get-Culture).DateTimeFormat.GetMonthName(8)
-$approval = #tbd
+#$approval = tbd
 $name = [Environment]::UserName
 $hashes = Get-FileHash -Algorithm SHA256 -Path (Get-ChildItem "C:\Users\$name\Desktop\File Transfer\*.*" -Recurse -File -Force -ea SilentlyContinue -ev errs)
 
